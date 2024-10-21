@@ -1,4 +1,4 @@
-script_key = "YABwWFsrJEFzEKihkePaLllHRtgKtFax" 
+script_key = "Your key here" 
 getgenv().skibidi_script_key = script_key
 
 getgenv().Depart = {
