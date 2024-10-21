@@ -1,0 +1,80 @@
+script_key = "YABwWFsrJEFzEKihkePaLllHRtgKtFax" 
+getgenv().skibidi_script_key = script_key
+
+getgenv().Depart = {
+    ["Aimbot"] = {
+        ["Enabled"] = true,
+        ["Notifications"] = false,
+        ["PINGBASED"] = true,
+        ["PredictionValue"] = 0.12,
+        ["Radius"] = 50,
+        ["AirPrediction"] = 0.01
+    },
+    ["AimbotCamlock"] = {
+        ["Smoothness"] = 0.06,
+        ["AirSmoothness"] = 0.73,
+        ["Campred"] = 0.1449,
+        ["ShakeValue"] = 0,
+        ["AimPart"] = "Head"
+    },
+    ["FOVSettings"] = {
+        ["FOVVisible"] = false,
+        ["FOVSize"] = 50
+    },
+    ["Checks"] = {
+        ["FriendCheck"] = false,
+        ["UnlockOnKO"] = true,
+        ["AntiGroundShots"] = true
+    },
+    ["Visuals"] = {
+        ["Line"] = false,
+        ["Highlight"] = false,
+        [" Emoji"] = false,
+        ["EmojiType"] = "🥵"
+    },
+    ["BulletRedirection"] = { 
+        ["Enabled"] = true,
+        ["HitPart"] = "HumanoidRootPart",
+        ["AirPart"] = "LowerTorso",
+        ["Prediction"] =0.12068,
+        ["AirPrediction"] = 0.1,
+        ["FOV"] = {
+            ["Visible"] = false,
+            ["Size"] = 25
+        },
+        ["Checks"] = {
+            ["WallCheck"] = false,
+            ["FriendCheck"] = false,
+            ["KOCheck"] = true,
+            ["AntiGroundShots"] = true
+        },
+        ["Hitchance"] = {
+            ["Value"] = 300
+        }
+    },
+    ["Triggerbot"] = {
+        ["Enabled"] = true,
+        ["Delay"] = 0.1,
+        ["TapDelay"] = 0.01,
+        ["UsePrediction"] = true,
+        ["Prediction"] = 0.125,
+        ["Tolerance"] = 15,
+        ["Distance"] = 300,
+        ["FOVSize"] = 80,
+        ["FOVShow"] = false,
+        ["Whitelisted"] = {"[Double-Barrel SG]", "[DoubleBarrel]", "[Revolver]", "[TacticalShotgun]"},
+        ["UseWhitelist"] = true, 
+        ["AimParts"] = {"HumanoidRootPart", "Head"},
+        ["WallCheck"] = true,
+        ["KOCheck"] = true
+    },
+    ["Utility"] = {
+        ["Tool"] = false,
+        ["Button"] = true,
+        ["ButtonSize"] = 170,
+        ["Macro"] = false
+    }
+}
+
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/cd409f0a18aaab4f3025875cb52454ea.lua"))()
